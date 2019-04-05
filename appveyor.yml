@@ -21,6 +21,3 @@ artifacts:
   - path: PfxCreator\bin\$(CONFIGURATION)
     name: pfxcreator-latest
     type: zip
-
-cache:
-  - packages -> **\packages.config
