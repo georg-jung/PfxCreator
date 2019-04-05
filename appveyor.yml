@@ -1,0 +1,26 @@
+image: Visual Studio 2017
+version: 1.0.0.{build}
+configuration: Release
+platform: Any CPU
+shallow_clone: true
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+
+before_build:
+  - nuget restore
+
+build:
+  project: PfxCreator.sln
+  verbosity: minimal
+
+artifacts:
+  - path: PfxCreator\bin\$(CONFIGURATION)
+    name: pfxcreator-latest
+    type: zip
+
+cache:
+  - packages -> **\packages.config
