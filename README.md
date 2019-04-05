@@ -8,5 +8,7 @@ PfxCreator is a simple, single-exe tool for creating PKCS #12 files (.pfx, .p12)
 * supports RSA and ECDSA keys
 * output is encrypted, password can be empty
 
+![Screenshot](screenshot.png)
+
 ## System requirements
 * .Net Framework 4.6.2
