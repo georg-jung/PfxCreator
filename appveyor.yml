@@ -18,6 +18,6 @@ build:
   verbosity: minimal
 
 artifacts:
-  - path: PfxCreator\bin\$(CONFIGURATION)
+  - path: PfxCreator\bin\$(CONFIGURATION)\*.exe
     name: pfxcreator-latest
     type: zip
