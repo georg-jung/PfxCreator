@@ -87,7 +87,7 @@
       <Version>1.8.5</Version>
     </PackageReference>
     <PackageReference Include="Costura.Fody">
-      <Version>3.3.3</Version>
+      <Version>4.1.0</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
