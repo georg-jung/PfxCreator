@@ -1,4 +1,4 @@
-﻿using Org.BouncyCastle.Asn1.Pkcs;
+using Org.BouncyCastle.Asn1.Pkcs;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Pkcs;
 using Org.BouncyCastle.X509;
@@ -90,6 +90,11 @@ namespace PfxCreator
                 MessageBox.Show($"An error occured while exporting your certificate:\n\n{ex}",
                     "Error while exporting certificate", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void topmostCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            this.TopMost = topmostCheckBox.Checked;
         }
     }
 }

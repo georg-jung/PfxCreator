@@ -1,4 +1,4 @@
-﻿namespace PfxCreator
+namespace PfxCreator
 {
     partial class MainForm
     {
@@ -37,19 +37,22 @@
             this.exportPasswordLabel = new System.Windows.Forms.Label();
             this.savePfxButton = new System.Windows.Forms.Button();
             this.splitter1 = new System.Windows.Forms.Splitter();
+            this.upperControlsPanel = new System.Windows.Forms.Panel();
+            this.topmostCheckBox = new System.Windows.Forms.CheckBox();
             this.certGroupBox.SuspendLayout();
             this.privateKeyGroupBox.SuspendLayout();
             this.controlsPanel.SuspendLayout();
+            this.upperControlsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // certGroupBox
             // 
             this.certGroupBox.Controls.Add(this.certTextBox);
             this.certGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.certGroupBox.Location = new System.Drawing.Point(6, 6);
+            this.certGroupBox.Location = new System.Drawing.Point(6, 30);
             this.certGroupBox.Name = "certGroupBox";
             this.certGroupBox.Padding = new System.Windows.Forms.Padding(9);
-            this.certGroupBox.Size = new System.Drawing.Size(572, 330);
+            this.certGroupBox.Size = new System.Drawing.Size(572, 306);
             this.certGroupBox.TabIndex = 0;
             this.certGroupBox.TabStop = false;
             this.certGroupBox.Text = "Certificate (PEM)";
@@ -61,7 +64,7 @@
             this.certTextBox.Multiline = true;
             this.certTextBox.Name = "certTextBox";
             this.certTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.certTextBox.Size = new System.Drawing.Size(554, 299);
+            this.certTextBox.Size = new System.Drawing.Size(554, 275);
             this.certTextBox.TabIndex = 0;
             // 
             // privateKeyGroupBox
@@ -138,6 +141,27 @@
             this.splitter1.TabIndex = 0;
             this.splitter1.TabStop = false;
             // 
+            // upperControlsPanel
+            // 
+            this.upperControlsPanel.Controls.Add(this.topmostCheckBox);
+            this.upperControlsPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.upperControlsPanel.Location = new System.Drawing.Point(6, 6);
+            this.upperControlsPanel.Name = "upperControlsPanel";
+            this.upperControlsPanel.Size = new System.Drawing.Size(572, 24);
+            this.upperControlsPanel.TabIndex = 1;
+            // 
+            // topmostCheckBox
+            // 
+            this.topmostCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.topmostCheckBox.AutoSize = true;
+            this.topmostCheckBox.Location = new System.Drawing.Point(447, 3);
+            this.topmostCheckBox.Name = "topmostCheckBox";
+            this.topmostCheckBox.Size = new System.Drawing.Size(125, 17);
+            this.topmostCheckBox.TabIndex = 0;
+            this.topmostCheckBox.Text = "Window stays on top";
+            this.topmostCheckBox.UseVisualStyleBackColor = true;
+            this.topmostCheckBox.CheckedChanged += new System.EventHandler(this.topmostCheckBox_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +170,7 @@
             this.Controls.Add(this.certGroupBox);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.privateKeyGroupBox);
+            this.Controls.Add(this.upperControlsPanel);
             this.Controls.Add(this.controlsPanel);
             this.Name = "MainForm";
             this.Padding = new System.Windows.Forms.Padding(6);
@@ -158,6 +183,8 @@
             this.privateKeyGroupBox.PerformLayout();
             this.controlsPanel.ResumeLayout(false);
             this.controlsPanel.PerformLayout();
+            this.upperControlsPanel.ResumeLayout(false);
+            this.upperControlsPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -173,6 +200,8 @@
         private System.Windows.Forms.TextBox privateKeyTextBox;
         private System.Windows.Forms.TextBox pfxPasswordTextBox;
         private System.Windows.Forms.Label exportPasswordLabel;
+        private System.Windows.Forms.Panel upperControlsPanel;
+        private System.Windows.Forms.CheckBox topmostCheckBox;
     }
 }
 
