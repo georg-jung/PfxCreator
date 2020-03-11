@@ -15,4 +15,4 @@ PfxCreator is a simple, single-exe tool for creating PKCS #12 files (.pfx, .p12)
 ![Screenshot](screenshot.png)
 
 ## System requirements
-* .Net Framework 4.6.2
+* .Net Framework 4.7.2
