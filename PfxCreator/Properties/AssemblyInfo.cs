@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("PfxCreator")]
 [assembly: AssemblyDescription("Creates PKCS #12 files (.pfx, .p12) from PEM representations of certificate and private key.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Georg Jung")]
 [assembly: AssemblyProduct("PfxCreator")]
-[assembly: AssemblyCopyright("Copyright © Georg Jung 2019")]
+[assembly: AssemblyCopyright("Copyright © Georg Jung 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
