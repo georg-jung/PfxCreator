@@ -1,4 +1,4 @@
-namespace PfxCreator
+﻿namespace PfxCreator
 {
     partial class MainForm
     {
@@ -175,6 +175,7 @@ namespace PfxCreator
             this.Name = "MainForm";
             this.Padding = new System.Windows.Forms.Padding(6);
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PfxCreator";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.certGroupBox.ResumeLayout(false);
