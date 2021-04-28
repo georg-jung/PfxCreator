@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  ignore:
+  - dependency-name: Costura.Fody
+    versions:
+    - 5.0.2
+    - 5.1.0
+    - 5.2.0
+  - dependency-name: Portable.BouncyCastle
+    versions:
+    - 1.8.9
